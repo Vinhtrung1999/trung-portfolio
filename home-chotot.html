@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<style>
+    .sub-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .sub-title-blocked {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .sub-title a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .sub-title a:hover {
+        color: #333;
+    }
+
+    .qr-code {
+        display: none;
+        position: absolute;
+        left: -50px;
+        top: 30px;
+        box-shadow: #333 0px 1px 5px 1px;
+    }
+
+    .app-download {
+        position: relative;
+    }
+
+    .app-download:hover .qr-code{
+        display: block;
+    }
+
+</style>
+<body>
+    <div class="sub-title">
+        <div class="sub-title-blocked">
+            <div class="sub-title-item">
+                <a href="#">Chợ tốt</a>
+            </div>
+            <div class="sub-title-item">
+                <a href="#">Nhà tốt</a>
+            </div>
+            <div class="sub-title-item">
+                <a href="#">Chợ tốt xe</a>
+            </div>
+            <div class="sub-title-item">
+                <a href="#">Việc làm tốt</a>
+            </div>
+        </div>
+        <div class="sub-title-blocked">
+            <div class="sub-title-item">
+                <a href="#">Đóng góp ý kiến</a>
+            </div>
+            <div class="sub-title-item app-download">
+                <a href="#">Tải ứng dụng</a>
+                <div class="qr-code">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QR_icon.svg/1024px-QR_icon.svg.png" width="150" alt="alt">
+                </div>
+            </div>
+            <div class="sub-title-item">
+                <a href="#">Trợ giúp</a>
+            </div>
+            <div class="sub-title-item">
+                <a href="#">Dành cho môi giới</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
